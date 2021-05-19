@@ -38,6 +38,7 @@
             this.especialidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.semestreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.promedioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.matriculaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificacionDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bajasDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -48,7 +49,6 @@
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.matriculaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +60,7 @@
             this.archivosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(888, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1109, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -85,6 +85,7 @@
             this.altasDeDatosToolStripMenuItem.Name = "altasDeDatosToolStripMenuItem";
             this.altasDeDatosToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
             this.altasDeDatosToolStripMenuItem.Text = "Altas de datos";
+            this.altasDeDatosToolStripMenuItem.Click += new System.EventHandler(this.altasDeDatosToolStripMenuItem_Click);
             // 
             // consultaDeDatosPorToolStripMenuItem
             // 
@@ -102,32 +103,44 @@
             // generalesToolStripMenuItem
             // 
             this.generalesToolStripMenuItem.Name = "generalesToolStripMenuItem";
-            this.generalesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.generalesToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
             this.generalesToolStripMenuItem.Text = "Generales";
+            this.generalesToolStripMenuItem.Click += new System.EventHandler(this.generalesToolStripMenuItem_Click);
             // 
             // nombresToolStripMenuItem
             // 
             this.nombresToolStripMenuItem.Name = "nombresToolStripMenuItem";
-            this.nombresToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.nombresToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
             this.nombresToolStripMenuItem.Text = "Nombres";
+            this.nombresToolStripMenuItem.Click += new System.EventHandler(this.nombresToolStripMenuItem_Click);
             // 
             // especialidadToolStripMenuItem
             // 
             this.especialidadToolStripMenuItem.Name = "especialidadToolStripMenuItem";
-            this.especialidadToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.especialidadToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
             this.especialidadToolStripMenuItem.Text = "Especialidad";
+            this.especialidadToolStripMenuItem.Click += new System.EventHandler(this.especialidadToolStripMenuItem_Click);
             // 
             // semestreToolStripMenuItem
             // 
             this.semestreToolStripMenuItem.Name = "semestreToolStripMenuItem";
-            this.semestreToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.semestreToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
             this.semestreToolStripMenuItem.Text = "Semestre";
+            this.semestreToolStripMenuItem.Click += new System.EventHandler(this.semestreToolStripMenuItem_Click);
             // 
             // promedioToolStripMenuItem
             // 
             this.promedioToolStripMenuItem.Name = "promedioToolStripMenuItem";
-            this.promedioToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.promedioToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
             this.promedioToolStripMenuItem.Text = "Promedio";
+            this.promedioToolStripMenuItem.Click += new System.EventHandler(this.promedioToolStripMenuItem_Click);
+            // 
+            // matriculaToolStripMenuItem
+            // 
+            this.matriculaToolStripMenuItem.Name = "matriculaToolStripMenuItem";
+            this.matriculaToolStripMenuItem.Size = new System.Drawing.Size(176, 26);
+            this.matriculaToolStripMenuItem.Text = "Matricula";
+            this.matriculaToolStripMenuItem.Click += new System.EventHandler(this.matriculaToolStripMenuItem_Click);
             // 
             // modificacionDeDatosToolStripMenuItem
             // 
@@ -140,6 +153,7 @@
             this.bajasDeDatosToolStripMenuItem.Name = "bajasDeDatosToolStripMenuItem";
             this.bajasDeDatosToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
             this.bajasDeDatosToolStripMenuItem.Text = "Bajas de datos";
+            this.bajasDeDatosToolStripMenuItem.Click += new System.EventHandler(this.bajasDeDatosToolStripMenuItem_Click);
             // 
             // listView1
             // 
@@ -152,9 +166,9 @@
             this.columnHeader6,
             this.columnHeader7});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(56, 59);
+            this.listView1.Location = new System.Drawing.Point(27, 55);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(705, 275);
+            this.listView1.Size = new System.Drawing.Size(927, 318);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -194,17 +208,11 @@
             this.columnHeader7.Text = "Promedio";
             this.columnHeader7.Width = 75;
             // 
-            // matriculaToolStripMenuItem
-            // 
-            this.matriculaToolStripMenuItem.Name = "matriculaToolStripMenuItem";
-            this.matriculaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.matriculaToolStripMenuItem.Text = "Matricula";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 478);
+            this.ClientSize = new System.Drawing.Size(1109, 478);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;

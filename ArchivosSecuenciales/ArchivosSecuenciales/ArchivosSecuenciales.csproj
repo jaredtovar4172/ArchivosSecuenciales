@@ -46,6 +46,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DialogBoxAltas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBoxAltas.Designer.cs">
+      <DependentUpon>DialogBoxAltas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBoxBajas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBoxBajas.Designer.cs">
+      <DependentUpon>DialogBoxBajas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBoxBuscarEspecialidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBoxBuscarEspecialidad.Designer.cs">
+      <DependentUpon>DialogBoxBuscarEspecialidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBoxBuscarMatricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBoxBuscarMatricula.Designer.cs">
+      <DependentUpon>DialogBoxBuscarMatricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBoxBuscarNombre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBoxBuscarNombre.Designer.cs">
+      <DependentUpon>DialogBoxBuscarNombre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBoxBuscarPromedio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBoxBuscarPromedio.Designer.cs">
+      <DependentUpon>DialogBoxBuscarPromedio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBoxBuscarSemestre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBoxBuscarSemestre.Designer.cs">
+      <DependentUpon>DialogBoxBuscarSemestre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +97,27 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Secuenciales.cs" />
+    <EmbeddedResource Include="DialogBoxAltas.resx">
+      <DependentUpon>DialogBoxAltas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBoxBajas.resx">
+      <DependentUpon>DialogBoxBajas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBoxBuscarEspecialidad.resx">
+      <DependentUpon>DialogBoxBuscarEspecialidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBoxBuscarMatricula.resx">
+      <DependentUpon>DialogBoxBuscarMatricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBoxBuscarNombre.resx">
+      <DependentUpon>DialogBoxBuscarNombre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBoxBuscarPromedio.resx">
+      <DependentUpon>DialogBoxBuscarPromedio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBoxBuscarSemestre.resx">
+      <DependentUpon>DialogBoxBuscarSemestre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

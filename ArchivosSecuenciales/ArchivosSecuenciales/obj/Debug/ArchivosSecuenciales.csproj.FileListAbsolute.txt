@@ -1,0 +1,17 @@
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\bin\Debug\ArchivosSecuenciales.exe.config
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\bin\Debug\ArchivosSecuenciales.exe
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\bin\Debug\ArchivosSecuenciales.pdb
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.csprojAssemblyReference.cache
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.DialogBoxAltas.resources
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.Form1.resources
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.Properties.Resources.resources
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.csproj.GenerateResource.cache
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.csproj.CoreCompileInputs.cache
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.exe
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.pdb
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.DialogBoxBuscarNombre.resources
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.DialogBoxBuscarMatricula.resources
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.DialogBoxBuscarPromedio.resources
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.DialogBoxBuscarSemestre.resources
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.DialogBoxBuscarEspecialidad.resources
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.DialogBoxBajas.resources
