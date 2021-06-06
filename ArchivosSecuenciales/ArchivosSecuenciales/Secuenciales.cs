@@ -55,6 +55,7 @@ namespace ArchivosSecuenciales
         }
         public void Altas()
         {
+            FormsProgreso fp = new FormsProgreso();
             StreamWriter sw = new StreamWriter("..ArchivoDatos.txt", true, Encoding.ASCII);
             DialogBoxAltas altas = new DialogBoxAltas();
             if (altas.ShowDialog() == DialogResult.OK)
@@ -66,7 +67,8 @@ namespace ArchivosSecuenciales
                 sw.WriteLine(altas.especialidad);
                 sw.WriteLine(altas.semestre);
                 sw.WriteLine(altas.promedio);
-                MessageBox.Show("Datos del alumno almacenados en el archivo", "Archivos secuenciales", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                fp.Show();
+                //MessageBox.Show("Datos del alumno almacenados en el archivo", "Archivos secuenciales", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             sw.Close();
         }
@@ -332,6 +334,10 @@ namespace ArchivosSecuenciales
                 string promedio = sr.ReadLine();
                 while (matricula != null)
                 {
+                    if (matricula == baja.matricula)
+                    {
+                        swit = true;
+                    }
                     if (matricula != baja.matricula)
                     {
                         sw.WriteLine(matricula);
@@ -342,8 +348,6 @@ namespace ArchivosSecuenciales
                         sw.WriteLine(semestre);
                         sw.WriteLine(promedio);
                        }
-                        else
-                        {
                             matricula = sr.ReadLine();
                             nombre = sr.ReadLine();
                             paterno = sr.ReadLine();
@@ -351,7 +355,6 @@ namespace ArchivosSecuenciales
                             especialidad = sr.ReadLine();
                             semestre = sr.ReadLine();
                             promedio = sr.ReadLine();
-                        }
                     }
                 sw.Close();
                 sr.Close();
@@ -383,8 +386,107 @@ namespace ArchivosSecuenciales
                 }
                 sr1.Close();
                 sw1.Close();
+                if (swit == false)
+                {
+                    MessageBox.Show("La matricula del alumno no existe en los datos del archivo", "Archivos Secuenciales", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Se elimino los datos del alumno del archivo", "Archivos Secuenciales", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
+            }
+        public void MoidificarDatos()
+        {
+            bool swit = false;
+            DialogBoxModificar modificar = new DialogBoxModificar();
+            if (modificar.ShowDialog() == DialogResult.OK)
+            {
+                StreamReader sr = new StreamReader("..ArchivoDatos.txt");
+                StreamWriter sw = new StreamWriter("..Auxiliar.txt", false, Encoding.ASCII);
+                string matricula = sr.ReadLine();
+                string nombre = sr.ReadLine();
+                string paterno = sr.ReadLine();
+                string materno = sr.ReadLine();
+                string especialidad = sr.ReadLine();
+                string semestre = sr.ReadLine();
+                string promedio = sr.ReadLine();
+                while (matricula != null)
+                {
+                    if (matricula != modificar.matricula)
+                    {
+                        sw.WriteLine(matricula);
+                        sw.WriteLine(nombre);
+                        sw.WriteLine(paterno);
+                        sw.WriteLine(materno);
+                        sw.WriteLine(especialidad);
+                        sw.WriteLine(semestre);
+                        sw.WriteLine(promedio);
+                    }
+                    if (matricula == modificar.matricula)
+                    {
+                        swit = true;
+                        DialogBoxAltas crea = new DialogBoxAltas();
+                        if(crea.ShowDialog() == DialogResult.OK)
+                        {
+                            sw.WriteLine(crea.matricula);
+                            sw.WriteLine(crea.nombre);
+                            sw.WriteLine(crea.paterno);
+                            sw.WriteLine(crea.materno);
+                            sw.WriteLine(crea.especialidad);
+                            sw.WriteLine(crea.semestre);
+                            sw.WriteLine(crea.promedio);
+                        }
+                    }
+                    swit = true;
+                    matricula = sr.ReadLine();
+                    nombre = sr.ReadLine();
+                    paterno = sr.ReadLine();
+                    materno = sr.ReadLine();
+                    especialidad = sr.ReadLine();
+                    semestre = sr.ReadLine();
+                    promedio = sr.ReadLine();
+                }
+                sw.Close();
+                sr.Close();
+                StreamReader sr1 = new StreamReader("..Auxiliar.txt");
+                StreamWriter sw1 = new StreamWriter("..ArchivoDatos.txt", false, Encoding.ASCII);
+                matricula = sr1.ReadLine();
+                nombre = sr1.ReadLine();
+                paterno = sr1.ReadLine();
+                materno = sr1.ReadLine();
+                especialidad = sr1.ReadLine();
+                semestre = sr1.ReadLine();
+                promedio = sr1.ReadLine();
+                while (matricula != null)
+                {
+                    sw1.WriteLine(matricula);
+                    sw1.WriteLine(nombre);
+                    sw1.WriteLine(paterno);
+                    sw1.WriteLine(materno);
+                    sw1.WriteLine(especialidad);
+                    sw1.WriteLine(semestre);
+                    sw1.WriteLine(promedio);
+                    matricula = sr1.ReadLine();
+                    nombre = sr1.ReadLine();
+                    paterno = sr1.ReadLine();
+                    materno = sr1.ReadLine();
+                    especialidad = sr1.ReadLine();
+                    semestre = sr1.ReadLine();
+                    promedio = sr1.ReadLine();
+                }
+                sr1.Close();
+                sw1.Close();
+                if (swit == false)
+                {
+                    MessageBox.Show("La matricula del alumno no existe en los datos del archivo", "Archivos Secuenciales", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Los datos del alumno se modificaron del archivo", "Archivos Secuenciales", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
     }
+}
 

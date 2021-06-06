@@ -15,3 +15,5 @@ C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\
 C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.DialogBoxBuscarSemestre.resources
 C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.DialogBoxBuscarEspecialidad.resources
 C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.DialogBoxBajas.resources
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.DialogBoxModificar.resources
+C:\Users\jared\source\repos\ArchivosSecuenciales\ArchivosSecuenciales\obj\Debug\ArchivosSecuenciales.FormsProgreso.resources
